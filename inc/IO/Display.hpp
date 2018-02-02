@@ -125,10 +125,10 @@ public:
     static std::ofstream logfile;
 
 private:
-    GLFWwindow* openWindow(uint_fast8_t glversion);
-
     #ifdef INOVESA_USE_GUI
     #if GLFW_VERSION_MAJOR == 3
+    GLFWwindow* openWindow(uint_fast8_t glversion);
+
     /**
      * @brief _window pointer to window struct
      *
